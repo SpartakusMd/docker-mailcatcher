@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  mail:
+    image: spartakusmd/mailcatcher:$VERSION
+    build:
+      context: build
+      args:
+        MAILCATCHER_VERSION: $VERSION
+    ports:
+      - "1080:1080"
+      - "1025:1080"
