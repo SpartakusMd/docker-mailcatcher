@@ -15,9 +15,9 @@ Get it:
 
 Run it:
 
-    docker run -d -p 1080:1080 -p 1025:1025 --name mail spartakusmd/mailcatcher
+    docker run -d -p 1080:1080 -p 1025:1025 --name mailcatcher spartakusmd/mailcatcher
 
-You can send emails from your app or host on the 1025 port and check the web interface: http://\<your docker host\>:1080/ for the emails.
+You can send emails from your app or host on the 1025 port and check the web interface: (http://localhost:1080)[http://localhost:1080] for the emails.
 
 
 ## Build
