@@ -2,7 +2,7 @@ version: '2'
 
 services:
 
-  mail:
+  mailcatcher:
     image: spartakusmd/mailcatcher:$VERSION
     build:
       context: build
@@ -11,4 +11,4 @@ services:
     restart: unless-stopped
     ports:
       - "1080:1080"
-      - "1025:1080"
+      - "1025:1025"

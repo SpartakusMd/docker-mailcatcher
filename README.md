@@ -20,6 +20,19 @@ Run it:
 You can send emails from your app or host on the 1025 port and check the web interface: [http://localhost:1080](http://localhost:1080) for the emails.
 
 
+## Usage through docker-compose
+
+```
+version: '2'
+services:
+  mail:
+    image: spartakusmd/mailcatcher:latest
+    restart: unless-stopped
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+```
+
 ## Build
 
 Just clone this repo and run:
