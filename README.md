@@ -4,6 +4,7 @@ An unofficial Dockerfile for [mailcatcher][mailcatcher], the fake SMTP server wi
 
 ## Changelog
 
+- 2021-07-20 Upgrading Mailcatcher 0.8.0 on Alpine Linux 3.11
 - 2020-01-19 Upgrading Mailcatcher 0.7.1 on Alpine Linux 3.11
 
 
@@ -26,7 +27,7 @@ You can send emails from your app or host on the 1025 port and check the web int
 version: '2'
 services:
   mail:
-    image: spartakusmd/mailcatcher:latest
+    image: spartakusmd/mailcatcher
     restart: unless-stopped
     ports:
       - "1080:1080"
